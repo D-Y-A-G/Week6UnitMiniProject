@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Mini Project</title>
+    <!-- <link rel="stylesheet" href="/css/jass.css" /> -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Library of Congress Search Engine</h1>
+    </header>
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+      <section class="card card-rounded col-7 bg-white">
+        
+        <form id="search-form" class="form w-100">
+          <input id="search-input" class="form-input w-100" type="text">
+          <select id="format-input" class="format-input w-100">
+            <!-- taken from the format possible values in LoC data exploration-->
+            <option value="maps">Maps</option>
+            <option value="maps">Audio</option>
+            <option value="maps">Photos</option>
+            <option value="maps">Manuscripts</option>
+            <option value="maps">Newspapera</option>
+            <option value="maps">Film and Videos</option>
+            <option value="maps">Notated Music</option>
+            <option value="maps">Websites</option>
+          </select>
+        </form>
+        <div class="text-center pt-4">
+          <button class="btn btn-info btn-block" id="fetch-button">
+            Click Me
+          </button>
+        </div>
+        <table class="card-body table mx-auto my-4">
+          <th>
+            <p class="my-4">Results</p>
+          </th>
+          <tbody id="repo-table" class="mx-auto text-center"></tbody>
+        </table>
+      </section>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
